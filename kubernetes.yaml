@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hilla23
+  namespace: default
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: hilla23
+  template:
+    metadata:
+      labels:
+        app: hilla23
+    spec:
+      containers:
+        - name: hilla23
+          image: hilla23:latest
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8080
+          resources:
+            limits:
+              memory: 512Mi
+              cpu: '1'
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: hilla23-balancer
+spec:
+  selector:
+    app: hilla23
+  ports:
+    - protocol: TCP
+      port: 8000 # The port to expose to the outside
+      targetPort: 8080 # The port the application is running on in the pods
+  type: LoadBalancer
+  sessionAffinity: ClientIP
