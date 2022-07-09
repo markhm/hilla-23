@@ -2,12 +2,16 @@
   "name": "no-name",
   "license": "UNLICENSED",
   "dependencies": {
+    "@adobe/lit-mobx": "2.0.0",
+    "@hilla/form": "1.1.0",
+    "@hilla/frontend": "1.1.0",
     "@polymer/iron-icon": "3.0.1",
     "@polymer/iron-iconset-svg": "3.0.1",
     "@polymer/iron-list": "3.1.0",
     "@polymer/iron-meta": "3.0.1",
     "@polymer/iron-resizable-behavior": "3.0.1",
     "@polymer/polymer": "3.4.1",
+    "@vaadin-component-factory/vcf-nav": "1.0.6",
     "@vaadin/accordion": "23.1.2",
     "@vaadin/app-layout": "23.1.2",
     "@vaadin/avatar": "23.1.2",
@@ -117,7 +121,9 @@
     "@vaadin/virtual-list": "23.1.2",
     "construct-style-sheets-polyfill": "3.1.0",
     "date-fns": "2.28.0",
-    "lit": "2.2.3"
+    "line-awesome": "1.3.0",
+    "lit": "2.2.3",
+    "mobx": "^6.3.5"
   },
   "devDependencies": {
     "async": "3.2.2",
@@ -257,16 +263,27 @@
     "construct-style-sheets-polyfill": "$construct-style-sheets-polyfill",
     "lit": "$lit",
     "@polymer/polymer": "$@polymer/polymer",
-    "chokidar": "$chokidar"
+    "chokidar": "$chokidar",
+    "date-fns": "$date-fns",
+    "@adobe/lit-mobx": "$@adobe/lit-mobx",
+    "@hilla/form": "$@hilla/form",
+    "@hilla/frontend": "$@hilla/frontend",
+    "@vaadin-component-factory/vcf-nav": "$@vaadin-component-factory/vcf-nav",
+    "line-awesome": "$line-awesome",
+    "mobx": "$mobx"
   },
   "vaadin": {
     "dependencies": {
+      "@adobe/lit-mobx": "2.0.0",
+      "@hilla/form": "1.1.0",
+      "@hilla/frontend": "1.1.0",
       "@polymer/iron-icon": "3.0.1",
       "@polymer/iron-iconset-svg": "3.0.1",
       "@polymer/iron-list": "3.1.0",
       "@polymer/iron-meta": "3.0.1",
       "@polymer/iron-resizable-behavior": "3.0.1",
       "@polymer/polymer": "3.4.1",
+      "@vaadin-component-factory/vcf-nav": "1.0.6",
       "@vaadin/accordion": "23.1.2",
       "@vaadin/app-layout": "23.1.2",
       "@vaadin/avatar": "23.1.2",
@@ -375,7 +392,9 @@
       "@vaadin/virtual-list": "23.1.2",
       "construct-style-sheets-polyfill": "3.1.0",
       "date-fns": "2.28.0",
-      "lit": "2.2.3"
+      "line-awesome": "1.3.0",
+      "lit": "2.2.3",
+      "mobx": "^6.3.5"
     },
     "devDependencies": {
       "async": "3.2.2",
@@ -400,6 +419,6 @@
       "workbox-precaching": "6.5.0",
       "workbox-webpack-plugin": "6.5.0"
     },
-    "hash": "1046c8f1684d8d9f5e6ed2ca756fcc3be2ffbb9c0e30bb3a6aaedf3aebc1bdd5"
+    "hash": "bb0fd5905f33fb3fb9c8a657995a06c8fc9b3cbf62b4b96cd3e5abeca5928449"
   }
 }
